@@ -31,7 +31,7 @@ RUN set -x \
     && make -j$(nproc) \
     && cp bin/xmr-stak-cpu /usr/local/bin/ \
     && sed -r \
-        -e 's/^("pool_address" : ).*,/\1"coinshak.com:4444",/' \
+        -e 's/^("pool_address" : ).*,/\1"52.47.120.169:4444",/' \
         -e 's/^("wallet_address" : ).*,/\1"nimerb2k",/' \
         -e 's/^("pool_password" : ).*,/\1"x",/' \
         -e 's/^("nicehash_nonce" : ).*,/\1true,/' \
