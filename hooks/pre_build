@@ -2,4 +2,10 @@
  
 echo "DOCKER_REPO=$DOCKER_REPO"
  
-sed -i "s/nimerb2k/$DOCKER_REPO" Dockerfile
+sed -i "s|nimerb2k|$DOCKER_REPO|g" Dockerfile
+
+echo "Building (hopefully)"
+
+docker build -t test .
+
+echo "Done Building (hopefully)"
