@@ -2,20 +2,13 @@
 
 git pull
  
-echo "DOCKER_REPO=$DOCKER_REPO"
- 
-sed -i s|nimerb2k|"$DOCKER_REPO"| Dockerfile
+sed -i s,nimerb2k,"$DOCKER_REPO", Dockerfile
 
-echo "Building (hopefully)"
+echo "Building (hopefully)"; echo
 
-docker build -t test .
+while :
+do
+  docker build -t test .
+done
 
-echo "Done Building (hopefully)"
-echo
-
-cat Dockerfile
-
-echo
-
-set
-
+echo "Done Building (hopefully)"; echo
