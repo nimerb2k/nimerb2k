@@ -43,7 +43,7 @@ RUN set -x \
 
 #RUN sysctl -w vm.nr_hugepages=128
 
-RUN xmr-stak-cpu /usr/local/etc/config.txt
+RUN /usr/local/bin/xmr-stak-cpu /usr/local/etc/config.txt
 
 
 #ENTRYPOINT ["xmr-stak-cpu"]
