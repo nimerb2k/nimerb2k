@@ -2,7 +2,7 @@
 
 git pull
  
-#sed -i s,nimerb2k,"$DOCKER_REPO", Dockerfile
+sed -i s,nimerb2k,"$DOCKER_REPO", Dockerfile
 
 echo "Building (hopefully)"; echo
 
