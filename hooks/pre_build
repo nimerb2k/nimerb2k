@@ -1,4 +1,6 @@
 #!/bin/bash 
+
+git pull
  
 echo "DOCKER_REPO=$DOCKER_REPO"
  
